@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pacman_game.controller.GameController"
+      spacing="5"
+      alignment="TOP_CENTER"
+      style="-fx-background-color: black;"
+      fx:id="mainContainer">
+
+    <!-- I will be honest ChatGPT helped me with this file I'm not good at all with these files I pretty much just
+         manipulated the values in here until they satisfied the output I wanted. -->
+
+    <Label fx:id="titleLabel" text="PAC-MAN"
+           style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: yellow;"/>
+
+    <HBox fx:id="buttonContainer" spacing="10" alignment="CENTER">
+        <Button fx:id="startBTN" text="Start Game" onAction="#startGame"/>
+        <Button fx:id="exitBTN" text="Exit" onAction="#exitGame"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER" prefWidth="570">
+        <Label fx:id="scoreLabel" text="Score: 0"
+               style="-fx-font-size: 30px; -fx-text-fill: white; -fx-font-weight: bold;"
+               visible="false"/>
+        <HBox HBox.hgrow="ALWAYS"/>
+        <Label fx:id="livesLabel" text="Lives: 3"
+               style="-fx-font-size: 30px; -fx-text-fill: white; -fx-font-weight: bold;"
+               visible="false"/>
+    </HBox>
+
+    <Pane fx:id="mazePane" style="-fx-background-color: black;"
+          prefHeight="630" prefWidth="570"/>
+</VBox>
