@@ -2,9 +2,8 @@
 
 ## How To Run
 - Clone repository via HTTPS
-  https://csgit.ucalgary.ca/logan.duffy/pacman_game.git
 ```
-git clone https://csgit.ucalgary.ca/logan.duffy/pacman_game.git
+git clone https://github.com/loganduffy/pacman-game.git
 ```
 - Open the repository via Intellij IDEA
 - Run PacmanApplication.java
@@ -32,7 +31,4 @@ git clone https://csgit.ucalgary.ca/logan.duffy/pacman_game.git
                     └── PacMan.java
                 └── PacmanApplication.java
 ├──README.md
-├──docs
-    └──gameplan.pdf
-├── team.txt 
 ```
